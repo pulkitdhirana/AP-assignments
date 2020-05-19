@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LUDO</title>
+</head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<style type="text/css">
+	.yellow{
+		
+		background-color: #ffff66; 
+
+	
+		
+	}
+	.blue{
+		
+		background-color: #33ccff; 
+
+	
+		
+	}
+		.red{
+		
+		background-color:#ff5c33; 
+
+		
+		
+	}
+		.green{
+		
+		background-color: #63f52a; 
+
+		
+		
+	}
+	td{
+		background-color: white;
+		width:40px;
+		height: 40px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 20px;
+	}
+	.pink{
+		
+		background-color: pink; 
+
+		
+		
+	}
+	.fa-chess-king{
+		color:#ffcc00;
+	}
+	.fa-chess-queen{
+		color: blue;
+	}
+	.fa-chess-rook{
+		color:  red;
+	}
+	.fa-chess-pawn{
+		color: green;
+		
+	}
+	
+</style>
+<body>
+<table style="empty-cells: show;width: 606px;height: 606px;padding: 0px;margin: 0px;border-collapse: collapse;" border="1">
+
+
+<tr><td  class="yellow"  ></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td id="10"></td><td id="11"></td><td id="12"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td></tr>
+<tr><td class="yellow"></td><td></td><td  ></td><td></td><td></td><td class="yellow"></td><td id="9"></td><td class="blue" id="71" ></td><td class="blue" id="13"></td><td class="blue"></td><td></td><td></td><td></td><td><td class="blue"></td></td></tr>
+<tr><td class="yellow"></td><td></td><td id="y1"><i class='fas fa-chess-king' id='h22'></i></td><td id="y2"><i class='fas fa-chess-king' id='h22'></i></td><td></td><td class="yellow"></td><td class="pink" id="8"></td><td class="blue" id="72"></td><td id="14"></td><td class="blue"></td><td></td><td id="b1"><i class='fas fa-chess-queen' id='b44'></i></td><td id="b2"><i class='fas fa-chess-queen' id='b44'></i></td><td><td class="blue"></td></td></tr>
+<tr><td class="yellow"></td><td></td><td id="y3"><i class='fas fa-chess-king' id='h22'></i></td><td id="y4"><i class='fas fa-chess-king' id='h22'></i></td><td></td><td class="yellow"></td><td id="7"></td><td class="blue" id="73"></td><td id="15"></td><td class="blue"></td><td ></td><td id="b3"><i class='fas fa-chess-queen' id='b44'></i></td><td id="b4"><i class='fas fa-chess-queen' id='b44'></i></td><td><td class="blue"></td></td></tr>
+<tr><td  class="yellow"></td><td></td><td></td><td></td><td></td><td class="yellow"></td><td id="6"></td><td class="blue" id="74"></td><td id="16"></td><td class="blue"></td><td></td><td></td><td></td><td><td class="blue"></td></td></tr>
+<tr ><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td id="5"></td><td class="blue" id="75"></td><td id="17"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"><td class="blue"></td></td></tr>
+<tr><td id="51"></td><td class="yellow" id="0"></td><td id="1"></td><td id="2"></td><td id="3"></td><td id="4"></td><td>H</td><td class="blue" id="76"></td><td>O</td><td id="18"></td><td id="19"></td><td id="20"></td><td id="21" class="pink"></td><td id="22" ></td><td id="23"></td></tr>
+<tr><td id="50"></td><td class="yellow" id=61 ></td><td class="yellow" id="62" ></td><td class="yellow" id="63"></td><td class="yellow" id="64"></td><td class="yellow" id="65"></td><td class="yellow" id="66"></td><td></td><td id="86" class="red"></td><td class="red" id="85"></td><td class="red" id="84"></td><td class="red" id="83"></td><td class="red" id="82"></td><td class="red" id="81"></td><td id="24"></td></tr>
+<tr><td id="49"></td><td id="48"></td><td id="47" class="pink"></td><td id="46"></td><td id="45"></td><td id="44"></td ><td>E</td><td class="green" id="96"></td><td>M</td><td id="30"></td><td id="29"></td><td id="28"></td><td id="27"></td><td class="red" id="26"></td><td id="25"></td></tr>
+<tr><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td id="43"></td><td class="green" id="95"></td><td id="31"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"><td class="red"></td></td></tr>
+<tr><td class="green"></td><td></td><td></td><td></td><td></td><td class="green"></td><td id="42"></td><td class="green" id="94"></td><td id="32"></td><td class="red"></td><td></td><td></td><td></td><td><td class="red"></td></td></tr>
+<tr><td class="green"></td><td></td><td id="g3"><i class='fas fa-chess-pawn' id='g33'></i></td><td id="g4"><i class='fas fa-chess-pawn' id='g33'></i></td><td></td><td class="green"></td><td id="41"></td><td class="green" id="93"></td><td id="33"></td><td class="red"></td><td></td><td id="r3"><i class='fas fa-chess-rook' id='r44'></i></td><td id="r4"><i class='fas fa-chess-rook' id='r44'></i></td><td><td class="red"></td></td></tr>
+<tr><td class="green"></td><td></td><td id="g1"><i class='fas fa-chess-pawn' id='g33'></i></td><td id="g2"><i class='fas fa-chess-pawn' id='g33'></i></td><td></td><td class="green"></td><td id="40"></td><td class="green" id="92"></td><td id="34" class="pink"></td><td class="red"></td><td></td><td id="r1"><i class='fas fa-chess-rook' id='r44'></i></td><td id="r2"><i class='fas fa-chess-rook' id='r44'></i></td><td><td class="red"></td></td></tr>
+<tr><td class="green"></td><td></td><td></td><td></td><td></td><td class="green"></td><td class="green" id="39"></td><td class="green" id="91"></td><td id="35"></td><td class="red"></td><td></td><td></td><td></td><td><td class="red"></td></td></tr>
+<tr><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td id="38"></td><td id="37"></td><td id="36"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"><td class="red"></td></td></tr>
+
+
+</table>
+<button id="dice1"  style="background-color: yellow;height: 50px;width: 50px;font-size: 25px;">D</button>
+<button id="dice2" style="background-color: blue;height: 50px;width: 50px;font-size: 25px;">D</button>
+<button id="dice3"  style="background-color: red;height: 50px;width: 50px;font-size: 25px;">D</button>
+<button id="dice4" style="background-color: green;height: 50px;width: 50px;font-size: 25px;">D</button>
+
+<script type="text/javascript" src="ludo.js"></script>
+</body>
+</html>
