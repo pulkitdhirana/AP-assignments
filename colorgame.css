@@ -1,0 +1,46 @@
+body{
+	background-color:#232323;
+
+}
+.square{
+	width: 30%;
+	padding-bottom: 30% ;
+	background-color:#232323;
+	float: left;
+	margin:1.66%;
+}
+
+#container{
+	max-width: 600px;
+	margin :0 auto ;
+}
+#h1{
+ font-size: 50px;
+ color: white;
+}
+#header{
+	padding: 5px 0;
+	background-color:  skyblue;
+}
+#middle{
+	background-color: white;
+
+}
+#new{
+	margin-right:  10%;
+}
+#easy{
+	margin-left:  10%;
+	margin-right: 5%;
+}
+#hard{
+	margin-right: auto;
+}
+#try{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#number{
+	text-align: left;
+	font-size: 50px;
+}

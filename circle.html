@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tapatap</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.js"></script>
+	<script type="text/javascript" src="paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="circle.css">
+	<script type="text/paperscript" canvas="myCanvas" >
+  var a = new Howl({
+
+        src : ['bubbles.mp3']});
+var b = new Howl({
+
+        src : ['clay.mp3']});
+var c = new Howl({
+
+        src : ['confetti.mp3']});
+var d = new Howl({
+        src : ['corona.mp3']});
+
+        var e = new Howl({
+
+        src : ['dotted-spiral.mp3']});
+var f = new Howl({
+
+        src : ['flash-1.mp3']});
+var g = new Howl({
+
+        src : ['flash-2.mp3']});
+var h = new Howl({
+
+        src : ['flash-3.mp3']});
+var i = new Howl({
+
+        src : [ 'glimmer.mp3']});
+var j = new Howl({
+
+        src : ['moon.mp3']});
+var k = new Howl({
+
+        src : ['pinwheel.mp3']});
+var l = new Howl({
+
+        src : ['piston-1.mp3']});
+var m = new Howl({
+
+        src : ['piston-2.mp3']});
+var n = new Howl({
+
+        src : ['prism-1.mp3']});
+var o = new Howl({
+
+        src : ['prism-2.mp3']});
+var p = new Howl({
+
+        src : ['prism-3.mp3']});
+var q = new Howl({
+
+        src : ['spilts.mp3']});
+var r = new Howl({
+
+        src : ['sqiggle.mp3']});
+var s = new Howl({
+
+        src : ['strike.mp3']});
+var t = new Howl({
+
+        src : ['suspension.mp3']});
+var u = new Howl({
+
+        src : ['timer.mp3']});
+var v = new Howl({
+
+        src : ['ufo.mp3']});
+var w = new Howl({
+
+        src : ['veil.mp3']});
+var x = new Howl({
+
+        src : ['dotted-spiral.mp3']});
+var y = new Howl({
+
+        src : ['wipe.mp3']});
+var z = new Howl({
+
+        src : ['zig-zag.mp3']});
+
+
+        var files=[q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m];
+		var circles=[];
+
+	function onKeyDown(event){
+
+     files[Math.floor(Math.random()*27)].play();
+	var max=new Point(view.size.width,view.size.height);
+	var rpoint= Point.random();
+	var center=max * rpoint;
+	
+	var newcircle=new Path.Circle(center,500);
+	newcircle.fillColor = Color.random();
+circles.push(newcircle);
+}
+
+function onFrame(event){
+for(var i=0;i<circles.length;i++)
+	{circles[i].fillColor.hue += 1;
+	circles[i].scale(.9);
+}
+}
+	
+ 
+</script>
+</head>
+<body>
+<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
